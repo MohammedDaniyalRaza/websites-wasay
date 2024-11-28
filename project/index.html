@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Wasay - UI/UX Developer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="logo">AW</div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="moon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454z"/></svg>
+                    <svg class="sun" viewBox="0 0 24 24"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Abdul Wasay</h1>
+                <p class="animate-text-delay" style="margin-bottom: 10px;">UI/UX Developer || Designer || Programmer</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div id="hero-3d" class="hero-3d"  style="height: 100%;"></div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate UI/UX developer focused on creating beautiful and functional digital experiences. With expertise in design and development, I bring creative visions to life through clean code and intuitive interfaces.</p>
+                    <div class="skills">
+                        <span class="skill-tag">UI Design</span>
+                        <span class="skill-tag">UX Design</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Canva And Photoshop</span>
+                        <span class="skill-tag">Problem Solver</span>
+                        <span class="skill-tag">Front-end Developer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="nishmat.png" alt="" style="object-fit: cover; background-position: center; border-radius: 0.5rem;" height="100%" width="100%">
+                    </div>
+                    <h3>1st Project</h3>
+                    <p>UI/UX Design, Animated Portfolio</p>
+                    <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="btn secondary" target="_blank" style="margin-top: 10px;">Source Code</a>
+                    <a href="https://demo-project1-seven.vercel.app/" class="btn secondary" target="_blank" style="margin-top: 10px;">Live</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="dashbord.png" alt="" style="object-fit: cover; background-position: center; border-radius: 0.5rem;" height="100%" width="100%">
+                    </div>
+                    <h3>2nd Project</h3>
+                    <p>Static Dashbord, Beautiful UI</p>
+                    <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="btn secondary" target="_blank" style="margin-top: 10px;">Source Code</a>
+                    <a href="https://static-dashbord-abdul-wasay.vercel.app/" class="btn secondary" target="_blank" style="margin-top: 10px;">Live</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="aurang.png" alt="" style="object-fit: cover; background-position: center; border-radius: 0.5rem;" height="100%" width="100%">
+                    </div>
+                    <h3>3rd Project</h3>
+                    <p>Attractive Beautiful Responsive UI Design Portfolio</p>
+                    <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="btn secondary" target="_blank" style="margin-top: 10px;">Source Code</a>
+                    <a href="https://demo-project2-ten.vercel.app/" class="btn secondary" target="_blank" style="margin-top: 10px;">Live</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="c4241d83-2ec3-4ca5-9569-f902626cdac2">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Abdul Wasay. All rights reserved.</p>
+    </footer>
+
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
